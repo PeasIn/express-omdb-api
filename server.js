@@ -30,7 +30,7 @@ app.get("/details", async (req, res)=>{
     if (!movieId)
         return res.status(400).json({ error : "fella, stop forgetting about the movie ID query"});
 
-    // diisi dan dilanjutkan untuk request detail movie
+    // diisi dan dilanjutkan untuk request detail movie(sori sir anas saya gabisa bikin request detail)
 
 })
 
