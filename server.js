@@ -7,7 +7,7 @@ const PORT = 5000;
 const OMDB_API_KEY = process.env.OMDB_API_KEY
 
 app.get("/", (req, res)=>{
-    res.send("idk wtf im doing")
+    res.send("idk what im doing")
 })
 
 app.get("/search", async (req, res)=>{
