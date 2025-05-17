@@ -13,14 +13,14 @@ app.get("/", (req, res)=>{
 app.get("/search", async (req, res)=>{
     const movie = req.query.movie;
     if (!movie)
-        return res.status(400).json({ error : "idiotic ass forgot the movie query"});
+        return res.status(400).json({ error : "stupid fella forgot the movie query"});
 
     try{
         const response = await axios.get(`http://www.omdbapi.com/?s=${movie}&apikey=${OMDB_API_KEY}`);
         res.status(200).json(response.data);
     } catch (err)
     {
-        res.status(404).json({ error : "stupid ass forgot that this movie does NOT exist"})
+        res.status(404).json({ error : "stupid feller forgot that this movie does NOT exist"})
     }
 })
 
@@ -28,7 +28,7 @@ app.get("/search", async (req, res)=>{
 app.get("/details", async (req, res)=>{
     const movieId = req.query.movieId;
     if (!movieId)
-        return res.status(400).json({ error : "idiotic ass forbot about the movie ID query"});
+        return res.status(400).json({ error : "fella, stop forgetting about the movie ID query"});
 
     // diisi dan dilanjutkan untuk request detail movie
 
